@@ -51,7 +51,7 @@ cd spaCFCL
 Create the environment and install the pinned dependencies:
 
 ```bash
-conda create -n spaCFCL Python 3.8
+conda create -n spaCFCL 
 conda activate spaCFCL
 pip install -r requirements.txt
 ```
