@@ -90,7 +90,7 @@ python scripts/main.py
 
 ### Datasets with spot-level reference annotations
 
-For datasets that provide spot-level reference annotations, the agreement between the predicted spatial domains and the reference labels is measured with the **Adjusted Rand Index (ARI)**, **Normalized Mutual Information (NMI)**, **Adjusted Mutual Information (AMI)**, **V-measure**, and **Homogeneity** [35], [36]. All of these are "higher-is-better" metrics: a larger value indicates closer agreement between the clustering and the reference annotation.
+For datasets that provide spot-level reference annotations, the agreement between the predicted spatial domains and the reference labels is measured with the **Adjusted Rand Index (ARI)**, **Normalized Mutual Information (NMI)**, **Adjusted Mutual Information (AMI)**, **V-measure**, and **Homogeneity**. All of these are "higher-is-better" metrics: a larger value indicates closer agreement between the clustering and the reference annotation.
 
 | Metric      | Direction | Notes                                       |
 | ----------- | --------- | ------------------------------------------- |
