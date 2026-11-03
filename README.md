@@ -121,12 +121,13 @@ In addition, the predicted spatial domains are validated biologically by examini
 
 This implementation builds on the ideas and code of the following open-source projects and resources:
 
-- [spaLLM](https://github.com/PharMolix/spaLLM) — a related spatial multi-omics integration framework that inspired parts of the fusion design.
+- [spaLLM](https://github.com/liiilongyi/spaLLM) — a related spatial multi-omics integration framework that inspired parts of the fusion design.
 - [SpatialGlue](https://github.com/JinmiaoChenLab/SpatialGlue) — graph-based spatial multi-omics fusion; the encoder / decoder and clustering utilities originate here.
 - [Geneformer](https://huggingface.co/ctheodoris/Geneformer) — rank-value single-cell foundation model, one of the two reference foundation models.
 - [scGPT](https://github.com/bowang-lab/scGPT) — generative pre-trained single-cell model, the second reference foundation model.
 - [Ensembl BioMart](https://www.ensembl.org/info/data/biomart/index.html) — source of gene annotations and gene-ID mappings used in the preprocessing pipeline.
-- [scanpy](https://scanpy.readthedocs.io/) / [anndata](https://anndata.readthedocs.io/) — the data stack.
+- [scanpy](https://scanpy.scverse.org/en/stable/) — single-cell analysis toolkit for preprocessing, clustering, and visualization.
+- [anndata](https://anndata.scverse.org/en/stable/) — annotated data container underlying scanpy pipelines.
 
 We thank the authors and maintainers for making their work publicly available.
 
