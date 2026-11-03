@@ -15,14 +15,7 @@ from sklearn.neighbors import NearestNeighbors
 from sklearn.neighbors import kneighbors_graph 
 
 
-'''
-    adata_omics1, adata_omics2: two AnnData objects holding the two omics layers
-    (typically RNA and protein).
-    datatype: dataset type, 'SPOTS' by default (a spatial platform), e.g. '10x'.
-    n_neighbors: number of nearest neighbors used when building the spatial graph,
-    default 3.
 
-'''
 
 def construct_neighbor_graph(adata_omics1, adata_omics2, datatype='SPOTS', n_neighbors=3): # 3
     """
@@ -96,33 +89,6 @@ def clr_normalize_each_cell(adata, inplace=True):
     )
     return adata     
 
-def construct_graph_by_feature(adata_omics1, adata_omics2, k=20, mode= "connectivity", metric="correlation", include_self=False):
-    
-    """Constructing feature neighbor graph according to expresss profiles"""
-    
-
-    feature_graph_omics1=kneighbors_graph(adata_omics1.obsm['feat'], k, mode=mode, metric=metric, include_self=include_self)
-    
-    feature_graph_omics2=kneighbors_graph(adata_omics2.obsm['feat'], k, mode=mode, metric=metric, include_self=include_self)
-
-    return feature_graph_omics1, feature_graph_omics2
-
-def construct_graph_by_coordinate(cell_position, n_neighbors=3):
-   
-    # radius=1   
-    nbrs = NearestNeighbors(n_neighbors=n_neighbors+1,radius=1,algorithm='auto',metric ='minkowski',p=2).fit(cell_position)  
-
- 
-    _ , indices = nbrs.kneighbors(cell_position)
-   
-    x = indices[:, 0].repeat(n_neighbors)
-   
-    y = indices[:, 1:].flatten()
-    adj = pd.DataFrame(columns=['x', 'y', 'value']) 
-    adj['x'] = x 
-    adj['y'] = y
-    adj['value'] = np.ones(x.size)
-    return adj
 
 
 
