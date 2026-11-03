@@ -3,7 +3,7 @@
 **spaCFCL: Cross-foundation collaborative learning for spatial domain identification in multi-omics data**
 
 [![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-1.13.0-red.svg)](https://pytorch.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-1.12.0-red.svg)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
 
 spaCFCL integrates spatial transcriptomics with a second modality (protein / ADT or chromatin accessibility / ATAC) by coupling two independently pre-trained single-cell foundation models — **Geneformer** and **scGPT** — with graph-based multi-omics fusion and InfoNCE contrastive alignment.
