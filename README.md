@@ -59,8 +59,8 @@ pip install -r requirements.txt
 Two machine-specific settings appear in every script and **must** be edited before the first run:
 
 ```python
-os.environ['R_HOME'] = r'Path to your R installation'
-file_fold = 'path to your dataset folder'
+os.environ['R_HOME'] = 'Path to your R installation'
+file_fold = 'Path to your dataset folder'
 ```
 
 ---
