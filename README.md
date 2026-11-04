@@ -123,7 +123,7 @@ This implementation builds on the ideas and code of the following open-source pr
 
 - [spaLLM](https://github.com/liiilongyi/spaLLM) — a related spatial multi-omics integration framework that inspired parts of the fusion design.
 - [SpatialGlue](https://github.com/JinmiaoChenLab/SpatialGlue) — graph-based spatial multi-omics fusion; the encoder / decoder and clustering utilities originate here.
-- [Geneformer](https://github.com/jkobject/geneformer) — rank-value single-cell foundation model, one of the two reference foundation models.
+- [Geneformer](https://huggingface.co/ctheodoris/Geneformer) — rank-value single-cell foundation model, one of the two reference foundation models.
 - [scGPT](https://github.com/bowang-lab/scGPT) — generative pre-trained single-cell model, the second reference foundation model.
 - [Ensembl BioMart](https://www.ensembl.org/info/data/biomart/index.html) — source of gene annotations and gene-ID mappings used in the preprocessing pipeline.
 - [scanpy](https://github.com/scverse/scanpy) — single-cell analysis toolkit for preprocessing, clustering, and visualization.
