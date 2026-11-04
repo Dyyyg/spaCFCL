@@ -1,4 +1,4 @@
-# spaCFCL：Cross-foundation collaborative learning for spatial domain identification in multi-omics data
+# spaCFCL
 
 **spaCFCL: Cross-foundation collaborative learning for spatial domain identification in multi-omics data**
 
