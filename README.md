@@ -75,13 +75,12 @@ python scripts/main.py
 
 ## Data preparation
 
-| Modalities | Dataset               | Ground truth |
-| ---------- | --------------------- | ------------ |
-| RNA + ADT  | `Human Lymph Node A1` | Yes          |
-| RNA + ADT  | `Human Lymph Node D1` | Yes          |
-| RNA + ATAC | `Mouse brain`         | Yes          |
-| RNA + ADT  | `Mouse spleen`        | No           |
-
+| Dataset | Modalities | Ground truth |
+| ------- | ---------- | ------------ |
+| [`Human Lymph Node A1`](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE263617) | RNA + ADT  | Yes |
+| [`Human Lymph Node D1`](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE263617) | RNA + ADT  | Yes |
+| [`Mouse brain`](https://figshare.com/articles/dataset/Spatial_genomics_datasets/21623148/5?file=42520831) | RNA + ATAC | Yes |
+| [`Mouse spleen`](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE198353) | RNA + ADT  | No  |
 
 
 ---
