@@ -79,8 +79,8 @@ python scripts/main.py
 | ------- | ---------- | ------------ |
 | [`Human Lymph Node A1`](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE263617) | RNA + ADT  | Yes |
 | [`Human Lymph Node D1`](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE263617) | RNA + ADT  | Yes |
-| [`Mouse brain`](https://figshare.com/articles/dataset/Spatial_genomics_datasets/21623148/5?file=42520831) | RNA + ATAC | Yes |
-| [`Mouse spleen`](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE198353) | RNA + ADT  | No  |
+| [`Mouse Brain`](https://figshare.com/articles/dataset/Spatial_genomics_datasets/21623148/5?file=42520831) | RNA + ATAC | Yes |
+| [`Mouse Spleen`](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE198353) | RNA + ADT  | No  |
 
 
 ---
