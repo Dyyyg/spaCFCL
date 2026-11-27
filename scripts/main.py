@@ -146,11 +146,9 @@ sc.pp.scale(adata_omics2)
 adata_omics2.obsm['feat'] = pca(adata_omics2, n_comps=adata_omics2.n_vars-1) 
 
 k1=3  # 3 4 5 6 7 8 9 
-data = construct_neighbor_graph(adata_omics1, adata_omics2, datatype=datatype,n_neighbors=k1)
+k2 =17 # 14 15 16 17 18 19 20 
+data = construct_neighbor_graph(adata_omics1, adata_omics2, datatype=datatype,n_neighbors1=k1,n_neighbors2=k2)
 
-print('data456:',data)
-
-k =17 # 14 15 16 17 18 19 20 
 data['adj_emb_genef'] = kneighbors_graph(emb_genef, k , mode="connectivity",
                                          metric="correlation", include_self=False)
 data['adj_emb_scgpt'] = kneighbors_graph(emb_scgpt,k , mode="connectivity",
